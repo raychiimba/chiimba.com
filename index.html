@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chiimba — Coming Soon</title>
+  <meta name="description" content="chiimba.com is coming soon.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231b1b1b'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' fill='%23d9b26f' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f7f4ee;
+      --ink: #1b1b1b;
+      --muted: #6b665d;
+      --accent: #a8824a;
+      --line: rgba(27, 27, 27, 0.12);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #141414;
+        --ink: #f1ede5;
+        --muted: #a39d92;
+        --accent: #d9b26f;
+        --line: rgba(241, 237, 229, 0.14);
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; }
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 16px;
+      text-align: center;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: 560px; width: 100%; }
+    .mark {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-weight: 600;
+      font-size: clamp(3rem, 12vw, 5.5rem);
+      letter-spacing: 0.04em;
+      line-height: 1;
+    }
+    .rule {
+      width: 56px;
+      height: 1px;
+      background: var(--accent);
+      margin: 28px auto;
+    }
+    .label {
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    p.note {
+      margin-top: 18px;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--muted);
+    }
+    footer {
+      position: fixed;
+      bottom: 20px;
+      left: 0;
+      right: 0;
+      font-size: 0.75rem;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1 class="mark">Chiimba</h1>
+    <div class="rule" aria-hidden="true"></div>
+    <div class="label">Coming soon</div>
+    <p class="note">Something new is on its way. Please check back shortly.</p>
+  </main>
+  <footer>&copy; <span id="y">2026</span> chiimba.com</footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
